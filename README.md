@@ -51,7 +51,27 @@ picturebook-maker-skill.zip
 
 它提供多种排版方式：底部故事卡、全幅字幕条、漂浮文字云、左侧文字栏、顶部标题加底部轻声旁白，以及少字或无字叙事。一本书不该每页都像同一张卡片，它需要快慢、停顿和呼吸。
 
-## 安装
+## 一键安装
+
+在终端执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hermess/picturebook-maker/main/install.sh | bash
+```
+
+安装完成后，在 Codex 里这样调用：
+
+```text
+使用 picturebook-maker 技能，帮我做一个儿童绘本……
+```
+
+如果你想安装到自定义 skills 目录：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hermess/picturebook-maker/main/install.sh | CODEX_SKILLS_DIR=/path/to/skills bash
+```
+
+## 手动安装
 
 把整个 `picturebook-maker` 文件夹复制到 Codex skills 目录：
 

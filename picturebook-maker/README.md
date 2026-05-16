@@ -124,7 +124,27 @@ Picturebook Maker 的判断很简单：
 - `picturebook_contact_sheet.png`：一眼看完整本书的节奏。
 - `picturebook_print_package.zip`：可以传给印刷或继续归档。
 
-## 安装
+## 一键安装
+
+在终端执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hermess/picturebook-maker/main/install.sh | bash
+```
+
+安装完成后，在 Codex 里这样调用：
+
+```text
+使用 picturebook-maker 技能，帮我做一个儿童绘本……
+```
+
+如果你想安装到自定义 skills 目录：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hermess/picturebook-maker/main/install.sh | CODEX_SKILLS_DIR=/path/to/skills bash
+```
+
+## 手动安装
 
 把整个 `picturebook-maker` 文件夹复制到你的 Codex skills 目录：
 
